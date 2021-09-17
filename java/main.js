@@ -48,13 +48,20 @@ $(window).scroll(function(){
 
 
 $(window).scroll(function(){
-    if($(window).scrollTop() > 550) {
-        
+    if($(window).scrollTop() > 100) {
+        $('.navbar').css(            
+            'background',"white"
+
+        )
         $('.arrow').fadeIn();
     }else{
-        
+        $('.navbar').css(
+            'background',"#F7F9FE"
+
+        )
         $('.arrow').fadeOut();
     }
+    
 });
 
 
