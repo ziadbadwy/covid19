@@ -29,13 +29,14 @@
     background-image: url("shape-a.png");
     height: 100%;
     width: 100%;
-    background-color: #F7F9FE;
+    background-color:white ;
 }
 
 
 .navbar {
-    background-color: white;
+    background-color: white ;
     z-index: 111;
+    position: fixed;
     top: 0;
 
 
@@ -137,8 +138,7 @@
 
 }
 .navbar{
-    background-color:#F7F9FE;
-}
+background-color: white;}
 
 
 .navbar ul {
@@ -167,8 +167,9 @@
 }
 
 .container {
-    margin-top: 70px !important;
+    margin-top: 100px !important;
 }
+
 
 /*home*/
 .title {
@@ -635,9 +636,9 @@ footer i{
     }
 
     .container {
-        margin-top: 200px !important;
+        margin-top: 150px !important;
     }
-
+    
     .Have-Q {
 
         width: 88%;

@@ -8,7 +8,7 @@ let acco = document.getElementById('acco');
 
 
 var scroll = new SmoothScroll('a[href*="#"]',{
-    speed :500
+    speed :200
 });
 
 new WOW().init();
@@ -50,13 +50,14 @@ $(window).scroll(function(){
 $(window).scroll(function(){
     if($(window).scrollTop() > 100) {
         $('.navbar').css(            
-            'background',"white"
+            'background',"#F7F9FE"
 
         )
         $('.arrow').fadeIn();
     }else{
         $('.navbar').css(
-            'background',"#F7F9FE"
+            'background',"white"
+
 
         )
         $('.arrow').fadeOut();
