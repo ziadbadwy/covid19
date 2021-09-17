@@ -5,7 +5,12 @@
 
 }
 
-.navground{
+.c-p-1 {
+    color: #3d4b69;
+}
+
+
+.navground {
     background-color: rgba(27, 71, 161, 0.8);
     position: fixed;
     top: 0;
@@ -13,11 +18,11 @@
     width: 100%;
     height: 100%;
     z-index: 147;
-    display:block;
+    display: block;
     display: none;
 
 
-    
+
 }
 
 .bkg {
@@ -30,7 +35,7 @@
 .navbar {
     background-color: white;
     z-index: 111;
-    top:0;
+    top: 0;
 
 
 }
@@ -40,6 +45,17 @@
     height: 28px;
     position: relative;
     bottom: 3px;
+}
+.cov{
+    animation-name: anime;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+@keyframes anime{
+    0%{
+        transform: rotate(-360deg);
+    }
 }
 
 .navbar-brand h1 {
@@ -57,38 +73,44 @@
 .navicon {
     font-size: 0px;
     color: #394B6C;
-   
-    
-}
-.nav-menu{
-      background-color:white;
-      display: block;
-      z-index:2654;
-      position: fixed;
-      top:0;
-
-      width: 70%;
-      height: 100%;
-      display: none;
 
 
 }
-.nav-menu ul{
-    display:block;
-    
+
+.nav-menu {
+    background-color: white;
+    display: block;
+    z-index: 2654;
+    position: fixed;
+    top: 0;
+
+    width: 70%;
+    height: 100%;
+    display: none;
+
 
 }
-.nav-menu ul li{
+
+.nav-menu ul {
+    display: block;
+
+
+}
+
+.nav-menu ul li {
     margin: 20px;
 }
-.c1{
+
+.c1 {
     color: #394B6C;
 }
-.nav-menu ul li a:hover{
 
-color: blue !important;
+.nav-menu ul li a:hover {
+
+    color: blue !important;
 }
-.dnt{
+
+.dnt {
     background-color: #2a81ea;
     color: white;
 
@@ -97,19 +119,21 @@ color: blue !important;
     text-align: center;
     font-size: 20px;
 }
-.close-icon{
-    background-color:white;
-    border-radius:20px ;
+
+.close-icon {
+    background-color: white;
+    border-radius: 20px;
     position: fixed;
     top: 3%;
     right: 2%;
     display: none;
     z-index: 9889999;
 }
-.close{
+
+.close {
     font-size: 40px;
     color: #394B6C !important;
-    
+
 }
 
 
@@ -137,9 +161,11 @@ color: blue !important;
     background-color: rgb(16, 16, 112);
     color: white !important;
 }
-.container{
-    margin-top: 100px;
+
+.container {
+    margin-top: 100px !important;
 }
+
 /*home*/
 
 
@@ -169,6 +195,7 @@ color: blue !important;
 .container .hp span h3 {
     color: #FF5363 !important;
 }
+
 
 .middle1 {
     justify-content: space-around;
@@ -236,7 +263,8 @@ color: blue !important;
 .home1 {
     display: flex;
 }
-.arrow{
+
+.arrow {
     background-color: #2b56f5;
     border-radius: 10px;
     width: 3%;
@@ -245,55 +273,335 @@ color: blue !important;
     position: fixed;
     right: 2%;
     text-align: center;
-        z-index: 999999999999999;
+    z-index: 999999999999999;
 }
-.up{
+
+.up {
     color: white !important;
     font-size: 30px;
     margin-top: 10px;
-   
+
 
 }
+
 /*about*/
-#About p{
+#About p {
     color: #3d4b69;
     margin-bottom: 20px;
     font-size: 19px;
-    
-    
+
+
 
 }
-.toKnow ul{
+
+.toKnow ul {
     box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);
     border: 1px solid #e7e8ff;
     border-radius: 5px;
     margin-bottom: 15px;
 }
-.toKnow ul li{
+
+.toKnow ul li {
     font-size: 20px;
     box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);
     border-bottom: 1px solid #e7e8ff;
-        padding: 10px 30px;
+    padding: 10px 30px;
 
-    border-radius: 5px; 
+    border-radius: 5px;
     text-align: left;
 
 }
-.toKnow ul li a span i{
+
+.toKnow ul li a span i {
     float: right;
 }
 
+/*HOW CORONAVIRUS IS SPREAD*/
+.HOW-SPRD {
+    background-color: #F7F9FE;
+
+}
+
+.HOW-SPRD .row {
+    justify-content: space-between;
+}
+
+.HOW-content {
+    border-top: 6px solid #9cc2f7;
+    background-color: white;
+}
+
+.HOW-p1 {
+    color: #2a81ea;
+    width: 100%;
+    padding: 10px;
+}
+
+.HOW-p2 {
+    color: #3d4b69;
+    width: 100%;
+    padding: 10px;
+}
+
+.Have-Q {
+    background-color: #2a81ea;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 25%;
+    margin-bottom: 20px !important;
+    text-align: center;
+
+}
+
+.Have-Q .btn {
+    color: white;
+    display: inline-block;
+
+}
+
+/*symptoms*/
+.symptoms img {
+    width: 25%;
+    height: 25%;
+    border-radius: 50px;
+    float: right;
+    position: relative;
+    top: -60px;
+}
+
+.symptoms .row {
+    justify-content: space-between;
+    margin-top: 15px !important;
+}
+
+.symptoms .moslas {
+    font-size: 40px !important;
+    color: #2367b9 !important;
+}
+
+/*HOW-PROTECT*/
+.HOW-PROTECT img {
+    border-radius: 100px;
+    width: 50%;
+    height: 50%;
 
 
 
+}
 
+.HOW-PROTECT .row {
+    margin-top: 120px !important;
+    justify-content: space-between;
+}
+
+.HOW-PROTECT h5 {
+    font-size: 17px;
+}
+
+.PREVENTION h4 {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.PREVENTION p {
+    margin-left: 10px;
+
+}
+
+.PREVENTION img {
+    margin-right: 70px;
+}
+
+
+.prev-btns span {
+    float: right;
+}
+
+/*protect*/
+.protect .r {
+    width: 100%;
+    background-color: white;
+}
+
+.protect p {
+    color: #3d4b69;
+    padding: 10px;
+
+}
+
+.protect img {
+    width: 100%;
+    height: 50% !important;
+}
+
+.protect span {
+    color: #3dca93 !important;
+}
+
+.hands .row {
+    background-color: #F7F9FE;
+
+}
+
+.hands img {
+    width: 100%;
+    height: 100%;
+}
+
+/*treatment*/
+.treat {
+    background-color: #2766bb;
+    background-image: url("shape-a.png");
+
+}
+
+.treat p {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*dos*/
+.do img {
+    border: 3px solid rgba(27, 71, 161, 0.8);
+    border-radius: 150px;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px !important;
+    background-color: white;
+
+}
+
+.do p {
+    color: #2a81ea;
+    margin-top: 45px !important;
+
+}
+
+.do .right-icon {
+    color: #3dca93;
+    background-color: white !important;
+    height: 5%;
+
+   /* position: relative;
+    right: 7px !important;*/
+    z-index: 999;
+    font-size: 20px;
+    border-radius: 250px;
+     margin-left: -7px !important; 
+
+}
+
+.do .wrong-icon {
+    color: #f86168;
+    background-color: white !important;
+    height: 5%;
+    margin-left: -10px !important;
+
+    font-size: 20px;
+    border-radius: 250px;
+
+}
+/*faq*/
+#faq ul li{
+    margin-top: 20px !important;
+}
+#faq ul li{
+    border: 3px solid rgb(204, 203, 203);
+    padding: 5px 30px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 5px !important;
+    width: 100%;
+}
+#faq ul li span{
+    float: right;
+    margin-left: 10px;
+}
+#faq ul li p{
+    margin-top: 5px;
+    color: #50658e;
+}
+#faq ul li:hover{
+    border: blue 3px solid;
+}
+#faq ul li p:hover {
+
+color: blue;
+}
+.accordion .card-header{
+    background-color: #f7fafe !important;
+
+}
+.accordion .bmw{
+       border: none !important;
+       background-color: #f7fafe;
+       color: #50658e !important;
+       font-size: 19px !important;
+
+}
+.accordion .bmw:hover{
+    color: #3b4a66 !important;
+}
+.accordion p{
+    color:#6b85b9 ;
+}
+.accordion span{
+    float: right;
+}
+/*news*/
+.new{
+    background-color: #f7f9fe;
+}
+.new .imgs img{
+border-radius: 15px;
+width: 100%;
+height: 100%;
+
+}
+.new p{
+    color: #3a4c6e;
+    text-align: center;
+}
+/*footer*/
+footer{
+    background-image: url("shape-a.png");
+    background-color: #151c2e;
+}
+footer p{
+    color: #b2bfe0 !important;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left !important;
+     margin-bottom: 0rem;
+
+
+}
+footer h5{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    
+
+}
+footer a{
+    color:#b2bfe0 !important;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+footer i{
+    color: rgb(185, 184, 184) !important;
+    font-size: 30px;
+    margin-top: 20px;
+}
 
 @media(max-width:770px) {
     .home1 {
         display: block;
     }
-    .navbar-brand h1{
-        font-size:60px ;
+
+    .navbar-brand h1 {
+        font-size: 60px;
     }
 
     .bottom1 {
@@ -314,41 +622,131 @@ color: blue !important;
         font-size: 60px;
 
     }
+
     .navbar-brand img {
         height: 50px;
-        width:50px;
-        margin-bottom:5px;
+        width: 50px;
+        margin-bottom: 5px;
     }
-    .nav-menu a{
+
+    .nav-menu a {
         font-size: 35px;
     }
-    .container{
-        margin-top: 200px;
-    }
-    
-    
 
+    .container {
+        margin-top: 200px !important;
+    }
+
+    .Have-Q {
+
+        width: 88%;
+        margin: 35px !important;
+    }
+
+    .H-Q button {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .d1 {
+        margin-top: 70px;
+    }
+
+    .p-moslas {
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .PREVENTION h4 {
+        text-align: left;
+    }
+
+    .PREVENTION p {
+        text-align: left;
+    }
+
+    .PREVENTION img {
+        width: 20%;
+        height: 20%;
+        float: right;
+    }
+
+    .hands img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .hands h5 {
+        font-size: 20px;
+        text-align: right;
+        position: relative;
+        bottom: 80px;
+    }
+
+    .cards {
+        width: 100% !important;
+        height: 100vh !important;
+    }
+
+   
+
+    .middle-img {
+        order: 1;
+    }
+
+    .do-1 {
+        order: 2;
+    }
+
+    .do-2 {
+        order: 3;
+    }
+    .acco1{
+        margin-top: 15px;
+    }
+    .arrow{
+        width: 8%;
+        height: 7%;
+        margin-right: 10px;
+        position: fixed;
+        right: 2%;
+        bottom: 10%;
+        text-align: center;
+        z-index: 999999999999999;
+    }
 }
 
 @media(max-width:520px) {
     .home1 {
         display: block;
     }
+    .arrow{
+        width: 10%;
+        height: 8%;
+        margin-right: 10px;
+        position: fixed;
+        right: 2%;
+        bottom: 10%;
+        text-align: center;
+        z-index: 999999999999999;
+    }
 
     .title {
         display: block;
-        
+
     }
 
     .title h1 {
         text-align: center;
         font-size: 55px !important;
     }
-    .title span h3{
-        font-size:40px
+
+    .title span h3 {
+        font-size: 40px
     }
-    .title span h2{
-        font-size:40px
+
+    .title span h2 {
+        font-size: 40px
     }
 
     .title span {
@@ -383,30 +781,74 @@ color: blue !important;
         display: block;
         font-size: 30px;
     }
+
     .navbar-brand h1 {
-        font-size:40px;
+        font-size: 40px;
 
     }
+
     .navbar-brand img {
         height: 30px;
         width: 35px;
-        margin-bottom:5px;
+        margin-bottom: 5px;
     }
-    .nav-menu a{
+
+    .nav-menu a {
         font-size: 20px;
     }
-    .container{
+
+    .container {
         margin-top: 150px;
     }
-    #About h4{
+
+    #About h4 {
         text-align: center;
 
     }
-    #About h1{
+
+    #About h1 {
         text-align: center;
     }
-    
+
+    .Have-Q {
+
+        width: 88%;
+        justify-content: center !important;
+        text-align: center !important;
+        margin: 22px !important;
+    }
+
+    .H-Q button {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .PREVENTION h4 {
+        font-size: 18.5px !important;
+    }
+
+    .PREVENTION p {
+        font-size: 16px !important;
+    }
+
+    .PREVENTION img {
+
+        margin-right: 50px !important;
+    }
+    .cards h5 {
+        font-size: 18px;
+    }
+
+    .cards p {
+        font-size: 13px;
+
+    }
+    .protect{
+        margin-left: 30px;
+    }
+
 }
+
 @media(max-width:320px) {
     .home1 {
         display: block;
@@ -448,17 +890,20 @@ color: blue !important;
         display: block;
         text-align: center;
     }
+
     .navicon {
 
         display: block;
     }
-    .nav-menu a{
+
+    .nav-menu a {
         font-size: 15px;
     }
-    
+
 
 }
-.About{
+
+.About {
     width: 100%;
     height: 100%;
 }

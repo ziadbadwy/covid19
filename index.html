@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corona</title>
+    <title>COVID</title>
     <!--boot strap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -26,7 +26,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <!--my main file-->
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/wow.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/main.css">
 
@@ -40,13 +42,15 @@
     <div id="nav_ground" class="navground"></div>
     <div id="close_icon" class="close-icon icon-c"><i class="close far fa-times-circle"></i></div>
 
-    <div id="nav_menu" class=" nav-menu"></div>
+    <div id="nav_menu" class=" nav-menu position-fixed  ">
+
+    </div>
+    <!--wow bounceInRight-->
     <div id="Home" class="bkg">
 
         <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 ">
             <a class="navbar-brand" href="#">
-                <h1>C<img class="wow pulse animated"
-                        style="animation-duration: 1500ms; animation-iteration-count: infinite;"
+                <h1>C<img class="cov"
                         src="./imgs/pngwing.com.png" alt="">VID<span class="c19">19</span></h1>
             </a>
             <i id="nav_icon" class="navicon fas fa-align-justify"></i>
@@ -58,33 +62,33 @@
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a style="color: #3d4b69;" class="nav-link" href="#">About corona <span
+                        <a style="color: #3d4b69;" class="nav-link" href="#About">About corona <span 
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a style="color: #3d4b69;" class="nav-link" href="#">Symptoms <span
+                        <a style="color: #3d4b69;" class="nav-link" href="#symptoms">Symptoms <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a style="color: #3d4b69;" class="nav-link" href="#">Prevention <span
+                        <a style="color: #3d4b69;" class="nav-link" href="#Prevention">Prevention <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a style="color: #3d4b69;" class="nav-link" href="#">Treatment <span
+                        <a style="color: #3d4b69;" class="nav-link" href="#Treatment">Treatment <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a style="color: #3d4b69;" class="nav-link" href="#">FAQ <span
-                                class="sr-only">(current)</span></a>
-
-                    </li>
-                    <li class="nav-item active">
-                        <a style="color: #3d4b69;" class="nav-link" href="#">News <span
+                        <a style="color: #3d4b69;" class="nav-link" href="#faq">FAQ <span
                                 class="sr-only">(current)</span></a>
 
                     </li>
                     <li class="nav-item active">
-                        <a style="color: #3d4b69;" class="dont nav-link " href="#">Do & Don’t<span
+                        <a style="color: #3d4b69;" class="nav-link" href="#news">News <span
+                                class="sr-only">(current)</span></a>
+
+                    </li>
+                    <li class="nav-item active">
+                        <a style="color: #3d4b69;" class="dont nav-link " href="#dos">Do & Don’t<span
                                 class="sr-only">(current)</span></a>
 
                     </li>
@@ -96,15 +100,17 @@
         <div class="container">
             <div class="home1">
                 <div class="hp col-12 col-lg-8">
-                    <div class="title wow fadeInDown">
-                        <h1 id="responsive_headline">CORONA </h1>
+                    <div class="title ">
+                        <h1 class="animate__animated  animate__zoomInDown" id="responsive_headline">CORONA </h1>
                         <span>
-                            <h3 id="responsive_headline">COVID-19</h3>
-                            <h2 id="responsive_headline">VIRUS</h2>
+                            <h3 id="responsive_headline ">COVID-19</h3>
+                            <h2 style="animation-delay: 0.5s;" class="animate__animated  animate__zoomInUp"
+                                id="responsive_headline">VIRUS</h2>
                         </span>
                     </div>
                     <div>
-                        <p class="wow bounceInLeft p1">The coronavirus (COVID-19) was first reported in Wuhan,
+                        <p style="animation-delay: 0.6s;" class="wow bounceInLeft p1">The coronavirus (COVID-19) was
+                            first reported in Wuhan,
                             hubei, china in
                             december
                             2019,
@@ -114,11 +120,11 @@
                             march 2020.</p>
                     </div>
                     <div class="middle1 row">
-                        <a class="how float-left nav-link " href="#">How To Protect <i
+                        <a class="how float-left nav-link " href="#dos">How To Protect <i
                                 class="fas fa-shield-alt"></i></a>
-                        <a class=" nav-link " href="#">About COVID-19 <i class="fas fa-arrow-right"></i></a>
+                        <a class=" nav-link " href="#About">About COVID-19 <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <div class="bottom1 row wow bounceInLeft">
+                    <div style="animation-delay: 0.6s;" class="bottom1 row wow bounceInLeft">
                         <div class="bNum">
                             <p class="word">worldwidecases </p>
                             <p class="num">224,572,652</p>
@@ -149,39 +155,852 @@
 
 
     <!--aboutDes///////////////////-->
+
     <div id="About">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 col-md-12">
                     <h4 class="wow fadeInDown" style="color: #2a81ea;">ABOUT THE DISEASE</h4>
-                    <h1  class="wow fadeInDown mt-2" style="color: #50658e;">CORONAVIRUS (COVID-19)</h1>
+                    <h1 class="wow fadeInDown mt-2" style="color: #50658e;">CORONAVIRUS (COVID-19)</h1>
                     <p class=" font-weight-bold">COVID-19 is a new illness that can affect your lungs and airways. </p>
-                    <p class="wow bounceInLeft">It's caused by a virus called coronavirus. It was discovered in December 2019 in Wuhan, Hubei,
+                    <p class="wow bounceInLeft">It's caused by a virus called coronavirus. It was discovered in December
+                        2019 in Wuhan, Hubei,
                         China.</p>
-                    <p class="wow bounceInLeft">Common signs of infection include respiratory symptoms, fever, cough, shortness of breath and
+                    <p class="wow bounceInLeft">Common signs of infection include respiratory symptoms, fever, cough,
+                        shortness of breath and
                         breathing difficulties. In more severe cases, infection can cause pneumonia, severe acute
                         respiratory syndrome, kidney failure and even death. </p>
-                    <p class="wow bounceInLeft">Standard recommendations to prevent infection spread include regular hand washing, covering mouth
+                    <p class="wow bounceInLeft">Standard recommendations to prevent infection spread include regular
+                        hand washing, covering mouth
                         and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with
                         anyone showing symptoms of respiratoryillness such as coughing and sneezing.
 
                     </p class="wow bounceInLeft">
                 </div>
                 <div class="toKnow mx-auto col-xl-4 col-md-12">
-                    <ul class="wow bounceInRight navbar-nav">
-                        <li style="color: #465675;font-size: 30px;" class="nav-item">What you need to know</li>
-                        <li class="nav-item"><a class="nav-link w-100" href="">How coronavirus is spread <span><i class=" fas fa-arrow-right"></i></span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Symptoms of coronavirus <span><i class=" fas fa-arrow-right"></i></span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="">How to protect yourself <span><i class=" fas fa-arrow-right"></i></span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Treatment for coronavirus <span><i class=" fas fa-arrow-right"></i></span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Myth-Busters of coronavirus <span><i class=" fas fa-arrow-right"></i></span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Questions & answers <span><i class=" fas fa-arrow-right"></i></span></a></li>
+                    <ul class=" navbar-nav">
+                        <li style="color: #465675;font-size: 30px;" class="wow bounceInRight nav-item">What you need to
+                            know</li>
+                        <li class="nav-item"><a class="wow bounceInRight nav-link w-100" href="#sprd">How coronavirus is
+                                spread <span><i class=" fas fa-arrow-right"></i></span></a></li>
+                        <li class="nav-item"><a class="wow bounceInRight nav-link" href="#symptoms">Symptoms of
+                                coronavirus
+                                <span><i class=" fas fa-arrow-right"></i></span></a></li>
+                        <li class="nav-item"><a class="wow bounceInRight nav-link" href="#dos">How to protect yourself
+                                <span><i class=" fas fa-arrow-right"></i></span></a></li>
+                        <li class="nav-item"><a class="wow bounceInRight nav-link" href="#Treatment">Treatment for
+                                coronavirus
+                                <span><i class=" fas fa-arrow-right"></i></span></a></li>
+                        <li class="nav-item"><a class="wow bounceInRight nav-link" href="#faq">COMMON QUESTION
+                                <span><i class=" fas fa-arrow-right"></i></span></a></li>
+                        <li class="nav-item"><a class="wow bounceInRight nav-link" href="#faq">Questions & answers
+                                <span><i class=" fas fa-arrow-right"></i></span></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+    <!--HOW CORONAVIRUS IS SPREAD-->
+    <div id="sprd" class="HOW-SPRD">
+        <div class="container">
+            <div>
+                <h4 class="wow fadeInDown text-center" style=" color: #2a81ea;">HOW CORONAVIRUS IS SPREAD</h4>
+                <h1 class="wow fadeInDown mt-2 text-center" style="color: #50658e;">TRANSMISSION OF COVID-19</h1>
+                <p style="color: #3d4b69;" class="wow fadeInDown text-center">Because it's a new illness, we do not know
+                    exactly how coronavirus spreads from person to person. Similar
+                    viruses are spread in cough droplets. </p>
+            </div>
+            <div class="row">
+                <div class="wow bounceInLeft col-xl-4 col-md-12">
+                    <div>
+                        <img style="width: 100%;height: 100%;" src="./imgs/spread-a.png" alt="">
 
+                    </div>
+
+                    <div class="HOW-content">
+                        <p class="HOW-p1">Person-to-person spread as close contact with infected</p>
+                        <p class="HOW-p2">The coronavirus is thought to spread mainly from person to person. This can
+                            happen between
+                            people who are in close contact with one another.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="wow fadeInDown col-xl-4 col-md-12">
+                    <div>
+                        <img style="width: 100%;height: 100%;" src="./imgs/spread-b.png" alt="">
+
+                    </div>
+                    <div class="HOW-content">
+                        <p class="HOW-p1">Touching or contact with infected surfaces or objects </p>
+                        <p class="HOW-p2">A person can get COVID-19 by touching a surface or object that has the virus
+                            on it and then touching their own mouth, nose, or possibly their eyes.
+                        </p>
+                    </div>
+                </div>
+                <div class="wow bounceInRight col-xl-4 col-md-12">
+                    <div>
+                        <img style="width: 100%;height: 100%;" src="./imgs/spread-c.png" alt="">
+
+                    </div>
+                    <div class="HOW-content">
+                        <p class="HOW-p1">Droplets that from infected person coughs or sneezes </p>
+                        <p class="HOW-p2">The coronavirus is thought to spread mainly from person to person. This can
+                            happen between people who are in close contact with one another.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <a class="Have-Q mx-auto nav-link wow fadeInDown" href="#faq">
+                <button class="btn">
+                    <i class="far fa-question-circle"></i> Have question about spreading?
+                </button>
+            </a>
+        </div>
+
+    </div>
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\symptoms//////////////////////////-->
+    <div id="symptoms" class="symptoms">
+        <div class="container">
+            <div style="margin-bottom: 80px;">
+                <h4 class="mt-3 text-center wow fadeInDown" style="color: #2a81ea;">WHAT ARE THE SYMPTOMS OF COVID-19 ?
+                </h4>
+                <h1 class="mt-2 text-center wow fadeInDown mt-2" style="color: #50658e;">SYMPTOMS OF CORONAVIRUS</h1>
+                <p class=" wow fadeInDown HOW-p2 mt-3 text-center">The most common symptoms of COVID-19 are fever,
+                    tiredness, and dry
+                    cough. Some patients may have
+                    aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually
+                    mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.
+                </p>
+
+            </div>
+            <div class="row">
+                <div style="box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);"
+                    class=" d1 wow bounceInLeft col-xl-4 col-md-12">
+                    <div>
+                        <img src="./imgs/symptom-a.png" alt="">
+                    </div>
+                    <div>
+                        <h5 style="color: #2a81ea;">Fever</h5>
+                        <p class="HOW-p2"> <b>High Fever</b> – this means you feel hot to touch on your chest or back
+                            (you do not need
+                            to
+                            measure your temperature). It is a common sign and also may appear in 2-10 days if you
+                            affected.
+                        </p>
+                    </div>
+
+
+                </div>
+                <div style="box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);"
+                    class="d1  wow fadeInDown col-xl-4 col-md-12">
+                    <div>
+                        <img src="./imgs/symptom-b.png" alt="">
+                    </div>
+                    <div>
+                        <h5 style="color: #2a81ea;">Cough</h5>
+                        <p class="HOW-p2"> <b>Continuous cough</b> – this means coughing a lot for more than an hour, or
+                            3 or more
+                            coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual).
+                        </p>
+                    </div>
+                </div>
+                <div style="box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);"
+                    class="d1 wow bounceInRight col-xl-4 col-md-12">
+                    <div>
+                        <img src="./imgs/symptom-c.png" alt="">
+                    </div>
+                    <div>
+                        <h5 style="color: #2a81ea;">Shortness of breath </h5>
+                        <p class="HOW-p2"> <b>Difficulty breathing</b> – Get up-to-date information about local COVID-19
+                            activity from <a href="">public health officials.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wow bounceInLeft col-xl-8 col-md-12">
+
+                    <p style="width: 80%;" class="p-moslas"> <i
+                            style=" animation-duration: 1000ms; animation-iteration-count: infinite;"
+                            class=" wow pulse animated moslas fas fa-exclamation-triangle"></i> <span class="HOW-p1">
+                            Stay
+                            at home and
+                            call your doctor:</span> If you think you have been exposed
+                        to COVID-19 and develop a fever and any symptoms, such as cough or difficulty breathing, call
+                        your
+                        healthcare provider as soon as possible for medical advice.</p>
+                </div>
+                <div class="col-xl-4 col-md-12">
+                    <a style="margin-top: 15px; width: 79%;"
+                        class="float-right Have-Q H-Q mx-auto nav-link wow bounceInRight" href="#faq">
+                        <button class="btn">
+                            <i class="far fa-question-circle"></i> Have question about spreading?
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--HOW TO PROTECT YOURSELF-->
+    <!--prevntaion-->
+    <div id="Prevention" class="HOW-PROTECT HOW-SPRD">
+        <div class="container">
+            <div>
+                <h4 class="mt-3 text-center wow fadeInDown" style="color: #2a81ea;">HOW TO PROTECT YOURSELF </h4>
+                <h1 class="mt-2 text-center wow fadeInDown mt-2" style="color: #50658e;">PREVENTION & ADVICE </h1>
+                <p style=" text-align: center;" class="wow fadeInDown HOW-p2 mx-auto">There is currently no vaccine
+                    to prevent coronavirus disease 2019 (COVID-19). The best way to
+                    prevent illness is to avoid being exposed to this virus. Stay aware of the latest information on
+                    the COVID-19 outbreak, available on the WHO website and through your national and local public
+                    health authority.
+                </p>
+            </div>
+
+            <div class="PREVENTION">
+                <div class=" row">
+                    <div class="col-xl-3 col-md-12 col-lg-6">
+                        <div>
+                            <img class=" wow rollIn" src="./imgs/advice-a.png" alt="">
+
+                        </div>
+                        <div class="text-center">
+                            <h4 class="HOW-p2">
+                                Wash your hands frequently
+
+                            </h4>
+                            <p class="wow bounceInUp c-p-1">
+                                Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash
+                                them with soap and water for at least 20 seconds.
+
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-md-12 col-lg-6">
+                        <div>
+                            <img class="wow rollIn" style="margin-right: 50px;" src="./imgs/advice-b.png" alt="">
+
+                        </div>
+                        <div class="text-center">
+                            <h4 class="HOW-p2">
+                                Maintain social distancing
+
+                            </h4>
+                            <p class="wow bounceInUp c-p-1">
+                                Maintain at least 1 metre (3 feet) distance between yourself & anyone who is
+                                coughing or sneezing. If you are too close, get chance to infected.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-md-12 col-lg-6">
+                        <div>
+                            <img class="wow rollIn" style="margin-right: 66px;" src="./imgs/advice-c.png" alt="">
+
+                        </div>
+                        <div class="text-center">
+                            <h4 class="HOW-p2">
+                                Avoid touching face
+
+                            </h4>
+                            <p class="wow bounceInUp c-p-1">
+                                Hands touch many surfaces and can pick up viruses. So, hands can transfer the virus
+                                to your eyes, nose or mouth and can make you sick.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-md-12 col-lg-6">
+                        <div>
+                            <img class="wow rollIn" src="./imgs/advice-d.png" alt="">
+
+                        </div>
+                        <div class="text-center">
+                            <h4 class="HOW-p2">
+                                Practice respiratory hygiene
+                            </h4>
+                            <p class="wow bounceInUp c-p-1">
+                                Maintain good respiratory hygiene as covering your mouth & nose with your bent elbow
+                                or tissue when cough or sneeze.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="prev-btns">
+                    <a class="Have-Q mx-auto nav-link wow fadeInDown" href="#HAND">
+                        <button class="btn">
+                            Check how you wash hand <span style="margin-left: 10px;"> <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </a>
+                    <a style="width: 170px !important; font-size: larger;"
+                        class=" text-center mx-auto nav-link wow fadeInDown" href="#faq">
+                        About COVID-19 <span> <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="protect ">
+            <div class="container">
+                <div class="row r">
+                    <div class="col-xl-7 col-md-12">
+                        <h2 class="c-p-1">Take steps to protect others
+                        </h2>
+                        <p class="wow bounceInLeft"><span> <i class="fas fa-check-circle"></i></span> <b>Stay home if
+                                you’re sick</b> – Stay home
+                            if you are
+                            sick,
+                            except to get medical care.</p>
+                        <p class="wow bounceInLeft"><span><i class="fas fa-check-circle"></i></span> <b>Cover your mouth
+                                and nose</b> – with a tissue when you
+                            cough or sneeze (throw used tissues in the trash) or use the inside of your elbow.</p>
+                        <p class="wow bounceInLeft"><span><i class="fas fa-check-circle"></i></span> <b>Wear a facemask
+                                if you are sick</b> – You should wear
+                            a facemask when you are around other people (e.g., sharing a room or vehicle) and before you
+                            enter a healthcare provider’s</p>
+                        <p class="wow bounceInLeft"><span> <i class="fas fa-check-circle"></i> </span><b>Clean AND
+                                disinfect frequently touched surfaces
+                                daily</b> – This includes phones, tables, light switches, doorknobs, countertops,
+                            handles, desks, toilets, faucets, and sinks.</p>
+                        <p class="wow bounceInLeft"><span><i class="fas fa-check-circle"></i></span> <b>Clean the dirty
+                                surfaces</b> – Use detergent or soap
+                            and water prior to disinfection.</p>
+                        <p class="wow bounceInLeft"><span><i class="fas fa-check-circle"></i></span> <b>Stay informed
+                                about the local COVID-19 situation</b> –
+                            Stay home if you are
+                            sick,
+                            except to get medical care.</p>
+                        <p class="wow bounceInLeft"><span><i class="fas fa-check-circle"></i></span> <b>Dedicated, lined
+                                trash can</b> – If possible, dedicate
+                            a lined trash can for the ill person. Use gloves when removing garbage bags, and handling &
+                            disposing of trash.</p>
+
+                    </div>
+                    <div style="width: 100%;height: 100%;" class="wow fadeInDown col-xl-5 col-md-12">
+                        <img src="./imgs/steps.png" alt="">
+                    </div>
+
+
+                </div>
+                <div id="HAND" class="container hands">
+                    <h3 class="text-center c-p-1">Follow steps to wash hands </h3>
+                    <a style="width: 240px !important; font-size: larger;"
+                        class=" text-center mx-auto nav-link wow fadeInDown" href="#faq">
+                        Why do I need wash hand <i class="fas fa-arrow-right"></i>
+
+                    </a>
+                    <div class="row">
+                        <div class="col-xl-2 col-md-4">
+                            <img class=" wow rollIn rounded-circle" src="./imgs/hand-a.png" alt="">
+                            <div style="text-align: center;">
+                                <h5 class=" HOW-p2">Soap on Hand </h5>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-2 col-md-4">
+                            <img class="wow rollIn rounded-circle" src="./imgs/hand-b.png" alt="">
+                            <div style="text-align: center;">
+                                <h5 class="HOW-p2">Palm to Palm</h5>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-4">
+                            <img class="wow rollIn rounded-circle" src="./imgs/hand-c.png" alt="">
+                            <div style="text-align: center;">
+                                <h5 class="HOW-p2">Between Fingers </h5>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-4">
+                            <img class="wow rollIn rounded-circle" src="./imgs/hand-d.png" alt="">
+                            <div style="text-align: center;">
+                                <h5 class="HOW-p2">Soap on Hand </h5>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-4">
+                            <img class="wow rollIn rounded-circle" src="./imgs/hand-e.png" alt="">
+                            <div style="text-align: center;">
+                                <h5 class="HOW-p2">Soap on Hand </h5>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-4">
+                            <img class="wow rollIn rounded-circle" src="./imgs/hand-f.png" alt="">
+                            <div style="text-align: center;">
+                                <h5 class="HOW-p2">Soap on Hand </h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="Treatment" class="treat">
+        <div style="margin-top:0px !important ;" class="container">
+            <div class="row">
+                <div class="col-xl-7 col-md-12 wow bounceInLeft">
+                    <h5 class="mt-5" style="color: #73e3ff; margin-top: 30px; margin: 10px;">BE CAREFULL & STAY SAFE
+                    </h5>
+                    <h1 style="color: white; margin: 10px;">TREATMENT FOR CORONAVIRUS
+                    </h1>
+                    <p>To date, there is no vaccine and no specific antiviral medicine to prevent or treat
+                        COVID-2019.
+                        However, those affected should receive care to relieve symptoms. People with serious illness
+                        should be hospitalized. Most patients recover thanks to supportive care.
+                    </p>
+                    <p>Antibiotics do not help, as they do not work against viruses. Treatment aims to relieve the
+                        symptoms while your body fights the illness. You'll need to stay in isolation, away from other
+                        people, until you have recovered.
+
+                    </p>
+
+                </div>
+                <div style="background-color: #1b47a1; height: 72vh; margin-bottom: 50px;border-radius: 20px;"
+                    class="wow bounceInRight w-100 col-xl-5 col-md-12 mt-5">
+                    <div class="cards">
+                        <h5 style="color: white;">
+                            Self Care
+                        </h5>
+                        <p>If you have mild symptoms, stay at home until you’ve recovered. You can relieve your symptoms
+                            if you:
+                        </p>
+                        <p><i class="fas fa-arrow-right"></i> Rest and sleep </p>
+                        <p><i class="fas fa-arrow-right"></i> Keep warm </p>
+                        <p><i class="fas fa-arrow-right"></i> Drink plenty of liquids </p>
+                        <p><i class="fas fa-arrow-right"></i> Use a room humidifier or take a hot shower to help ease a
+                            sore throat and cough
+                        </p>
+                        <h5 style="color: white;">Medical Treatments </h5>
+                        <p>If you develop a fever, cough, and have difficulty breathing, promptly seek medical care.
+                            Call in advance and tell your health provider of any recent travel or recent contact with
+                            travelers.
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div style="background-color: #f7f9fe;" id="dos">
+            <div class="container">
+
+                <h5 style="color: rgb(42, 129, 234);" class="wow fadeIn text-center">
+                    DO’S & DON’TS
+
+                </h5>
+                <h2 class="c-p-1 text-center wow fadeIn ">PROTECT YOURSELF
+                </h2>
+                <p style="color: #3d4b69 !important;" class="wow bounceInUp text-center">The best thing you can do now
+                    is plan for
+                    how you can adapt your daily
+                    routine. Take few steps to
+                    protect yourself as Clean your hands often, Avoid close contact, Cover coughs and sneezes, clean
+                    daily used surfaces etc. The best way to prevent illness is to avoid being exposed to this
+                    virus.
+
+                </p>
+
+                <div>
+                    <div class="row justify-content-around">
+                        <div class="do do-1 col-6 col-lg-3" style="display: block;">
+                            <div class="row">
+                                <div class=" mx-auto wrong-p">
+                                    <p>Social Distancing</p>
+                                </div>
+                                <div class="wow bounceInLeft wrong-img  mx-auto">
+
+                                    <img src="./imgs/donts-a.png" alt="">
+                                    <i class="wrong-icon fas fa-times-circle"></i>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" mx-auto wrong-p">
+                                    <p>Don’t Touch Face</p>
+                                </div>
+
+                                <div class="wow bounceInLeft wrong-img  mx-auto">
+
+                                    <img src="./imgs/donts-b.png" alt="">
+                                    <i class="wrong-icon fas fa-times-circle"></i>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" mx-auto wrong-p">
+                                    <p>Social Distancing</p>
+                                </div>
+                                <div class="wow bounceInLeft wrong-img  mx-auto">
+
+                                    <img src="./imgs/donts-c.png" alt="">
+                                    <i class="wrong-icon fas fa-times-circle"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn middle-img col-12 col-lg-5">
+                            <img style="width: 100%;height: 100%;" src="./imgs/protect.png" alt="">
+                        </div>
+                        <div class="do do-2 col-6 col-lg-3" style="display: block;">
+                            <div class="row">
+                                <div class=" mx-auto right-p">
+                                    <p>Wash Your Hands</p>
+                                </div>
+
+                                <div class="wow bounceInRight right-img  mx-auto">
+                                    <img src="./imgs/dos-a.png" alt="">
+                                    <i class="right-icon fas fa-check-circle"></i>
+
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" mx-auto right-p">
+                                    <p>Don’t Touch Face</p>
+                                </div>
+
+                                <div class="wow bounceInRight right-img  mx-auto">
+                                    <img src="./imgs/dos-b.png" alt="">
+                                    <i class="right-icon fas fa-check-circle"></i>
+
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" mx-auto right-p">
+                                    <p>Social Distancing</p>
+                                </div>
+
+                                <div class="wow bounceInRight right-img  mx-auto">
+                                    <img src="./imgs/dos-c.png" alt="">
+                                    <i class="right-icon fas fa-check-circle"></i>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="faq">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="HOW-p1 wow fadeIn">FREQUENTLY ASKED QUESTION </h5>
+                <h2 class="c-p-1 wow bounceInUp">COMMON QUESTION & ANSWER
+                </h2>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xl-4">
+                    <ul class="navbar-nav wow bounceInLeft">
+                        <li id="nav-I1" class="wow bounceInLeft nav-item nav-i1">
+                            <p>Coronavirus Disease 2019 Basics<span><i class="fas fa-caret-right"></i></span></p>
+                        </li>
+                        <li id="nav-I2" class="wow bounceInLeft nav-item nav-i2">
+                            <p>How It Spreads<span><i class="fas fa-caret-right"></i></span></p>
+                        </li>
+                        <li id="nav-I3" class="wow bounceInLeft nav-item nav-i3">
+                            <p>How to Protect Yourself<span><i class="fas fa-caret-right"></i></span></p>
+                        </li>
+                        <li id="nav-I4" class="wow bounceInLeft nav-item nav-i4">
+                            <p>Symptoms & Testing<span><i class="fas fa-caret-right"></i></span></p>
+                        </li>
+                        <li id="nav-I5" class="wow bounceInLeft nav-item nav-i5">
+                            <p>Outbreak in Your Community<span><i class="fas fa-caret-right"></i></span></p>
+                        </li>
+                        <li id="nav-I6" class="wow bounceInLeft nav-item nav-i6">
+                            <p>Myth-Busters of coronavirus<span><i class="fas fa-caret-right"></i></span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="acco" class="acco1 col-md-12 col-xl-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="bmw btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is a novel coronavirus? <span><i class="fas fa-plus"></i></span>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>On February 11, 2020 the World Health Organization announced an official name for
+                                        the disease that is causing the 2019 novel coronavirus outbreak, first
+                                        identified in Wuhan China. The new name of this disease is coronavirus disease
+                                        2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for
+                                        ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019
+                                        novel coronavirus” or “2019-nCoV”.
+                                    </p>
+                                    <p>A novel coronavirus is a new coronavirus that has not been previously identified.
+                                        The virus causing coronavirus disease 2019 (COVID-19), is not the same as the
+                                        coronaviruses that commonly circulate among humans and cause mild illness, like
+                                        the common cold.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="bmw btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Why is the disease being called coronavirus disease 2019 COVID-19?<span><i
+                                                class="fas fa-plus"></i></span>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>On February 11, 2020 the World Health Organization announced an official name for
+                                        the disease that is causing the 2019 novel coronavirus outbreak, first
+                                        identified in Wuhan China. The new name of this disease is coronavirus disease
+                                        2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for
+                                        ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019
+                                        novel coronavirus” or “2019-nCoV”.
+
+                                    </p>
+                                    <p>
+                                        There are many types of human coronaviruses including some that commonly cause
+                                        mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a
+                                        novel (or new) coronavirus that has not previously been seen in humans. The name
+                                        of this disease was selected following the World Health Organization (WHO) best
+                                        practiceexternal icon for naming of new human infectious diseases.
+
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="bmw btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        How can people help stop stigma related to COVID-19?<span><i
+                                                class="fas fa-plus"></i></span>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>People can fight stigma and help, not hurt, others by providing social support.
+                                        Counter stigma by learning and sharing facts. Communicating the facts that
+                                        viruses
+                                        do not target specific racial or ethnic groups and how COVID-19 actually spreads
+                                        can
+                                        help stop stigma.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="bmw btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Why might someone blame or avoid individuals and groups?<span><i
+                                                class="fas fa-plus"></i></span>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>People in the U.S. may be worried or anxious about friends and relatives who are
+                                        living in or visiting areas where COVID-19 is spreading. Some people are worried
+                                        about the disease. Fear and anxiety can lead to social stigma, for example,
+                                        towards Chinese or other Asian Americans or people who were in quarantine.
+                                    </p>
+                                    <p>Stigma is discrimination against an identifiable group of people, a place, or a
+                                        nation. Stigma is associated with a lack of knowledge about how COVID-19
+                                        spreads, a need to blame someone, fears about disease and death, and gossip that
+                                        spreads rumors and myths.
+                                    </p>
+                                    <p>
+                                        Stigma hurts everyone by creating more fear or anger towards ordinary people
+                                        instead of the disease that is causing the problem.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--\\\\\\\\\\\\\\\\\NEWS///////////////////-->
+    <div id="news" class="new">
+        <div class="container">
+            <h5 class="HOW-p1 text-center wow fadeIn">RECENT FROM BLOG</h5>
+            <h2 class="text-center c-p-1 wow fadeIn">
+                LATEST UPDATE</h2>
+            <div class="row">
+                <div class="col-xl-4 col-md-12">
+                    <div class="wow bounceInLeft imgs">
+                        <img src="./imgs/blog-a.jpg" alt="">
+                    </div>
+                    <div class="wow bounceInUp">
+                        <p><b>Caring for someone at home</b></p>
+                        <p>Most people who get sick with COVID-19 will have only mild illness and should recover at
+                            home.
+                            Care at home can help stop the spread of COVID-19
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12">
+                    <div class="imgs wow fadeIn">
+                        <img src="./imgs/blog-b.jpg" alt="">
+                    </div>
+                    <div class="wow bounceInUp">
+                        <p><b>Caring for someone at home</b></p>
+                        <p>Most people who get sick with COVID-19 will have only mild illness and should recover at
+                            home.
+                            Care at home can help stop the spread of COVID-19
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12">
+                    <div class="imgs wow bounceInRight">
+                        <img src="./imgs/blog-c.jpg" alt="">
+                    </div>
+                    <div class="wow bounceInUp">
+                        <p><b>Caring for someone at home</b></p>
+                        <p>Most people who get sick with COVID-19 will have only mild illness and should recover at
+                            home.
+                            Care at home can help stop the spread of COVID-19
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--\\\\\\\\\\\\\\\\\footer//////////////////-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-12 mt-5">
+                        <h3 style="color: white;">C<span><i style="color: tomato !important;"
+                                    class="fas fa-virus"></i></span>VID <span class="c-p-1">19</span></h3>
+                        <p>This website is for health information and advice about coronavirus (COVID-19), how to
+                            prevent
+                            and protect yourself from disease.
+                        </p>
+                        <p>Learn about the government response to coronavirus on GOV.UK.</p>
+                        <div style="display: block;">
+                            <p><a class="mr-2" href="https://www.facebook.com/ziadahmed19" target="__blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="mr-2" href="https://www.instagram.com/ziadahmedbadwy/" target="__blank"><i
+                                        class="fab fa-instagram-square"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-12 mt-5">
+                        <h5>QUICK LINK</h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#About">About Corona</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#symptoms">Symptoms</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#Prevention">Prevention</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#dos">Protect Youself</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#faq">FAQs</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-12 mt-5">
+                        <h5>HELPFULL LINK </h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#Home">WHO Website</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#Home">CDC Website</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#Home">NHS Website</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#Home">Harvard Health</a></p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-12 mt-5">
+                        <h5>IMPORTANT LINK </h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#Home">WHO Website</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#Home">CDC Website</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#Home">NHS Website</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#Home">Protect Youself</a></p>
+                            </li>
+                            <li class="nav-item">
+                                <p><a class="nav-link" href="#Home">Harvard Health</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="background-color: white; margin-top: 100px; margin-bottom: 100px;">
+                <div>
+                    <div>
+                        <p>© 2020 COVID-19</p>
+                        <p class="mt-5 mb">Disclaimer: We hope you find the information presented on this website
+                            useful. This website is
+                            for general information and raise awareness of (2019-nCoV) only. All the information based
+                            on
+                            WHO, NHS and CDC website. Information on our website is meant for awareness, if you have any
+                            doubt please verify from respective site</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+    </div>
 
 
 
